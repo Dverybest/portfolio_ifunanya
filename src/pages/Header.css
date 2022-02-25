@@ -1,0 +1,70 @@
+.header-container {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 1);
+}
+.ifuy-media-container {
+  display: flex;
+  justify-content: space-between;
+  width: 82%;
+  margin: auto;
+}
+.ifuy-container {
+  color: rgba(255, 255, 255, 1);
+  margin-top: 1.7em;
+  font-size: 1.5em;
+}
+.social-media-container {
+  margin-top: 2.3em;
+}
+.social-media-container img {
+  margin: 0.5em;
+}
+.welcome-container {
+  text-align: left;
+  margin-top: -1em;
+}
+.welcome-container img {
+  position: absolute;
+  top: 7em;
+  width: 80%;
+}
+.welcome-line {
+  width: 23%;
+  margin-top: 18em;
+  padding: 0.1em;
+  background-color: #ffffff;
+}
+.name-container {
+  width: 35%;
+  position: absolute;
+  left: 7.5em;
+  text-align: left;
+}
+.name-tag {
+  color: rgba(255, 255, 255, 1);
+  font-size: 4em;
+  line-height: 96px;
+  margin: 0em;
+}
+.profession-tag {
+  color: rgba(62, 106, 219, 1);
+  font-size: 2.3em;
+  line-height: 54px;
+  margin: 0em;
+}
+.image-container {
+  text-align: right;
+}
+.image-container img {
+  margin: -17em 0em 0em 0em;
+  width: 72%;
+}
+.image-line {
+  width: 17em;
+  padding: 0.1em;
+  background-color: #02ccce;
+  position: absolute;
+  right: 0em;
+  bottom: -4em;
+  opacity: 50%;
+}
