@@ -1,0 +1,128 @@
+.welcome-container {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 1);
+}
+.welcome-text {
+  width: 80%;
+  position: absolute;
+  right: 0em;
+}
+.welcome-line {
+  width: 22%;
+  padding: 0.01em;
+  background-color: #ffce31;
+  position: relative;
+  top: 6em;
+}
+.name-container {
+  width: 55%;
+  position: absolute;
+  left: 10em;
+  top: 1.5em;
+  text-align: left;
+}
+.name-tag {
+  color: #3e6adb;
+  font-size: 4em;
+  line-height: 78px;
+  margin: 0.3em 0em;
+  font-weight: bold;
+}
+.profession-tag {
+  color: white;
+  font-size: 2.3em;
+  line-height: 54px;
+}
+.name-wrapper {
+  width: 100%;
+  position: relative;
+  top: 8em;
+  left: -2.5em;
+}
+.image-container {
+  text-align: right;
+  margin-top: 2.5em;
+}
+.image-container img {
+  width: 70%;
+}
+.image-line {
+  width: 14em;
+  padding: 0.01em;
+  background-color: #02ccce;
+  position: absolute;
+  right: 0em;
+  bottom: 6em;
+  opacity: 50%;
+}
+@media screen and (max-width: 1025px) {
+  .name-container {
+    top: 0em;
+  }
+  .name-wrapper {
+    top: 7.5em;
+  }
+  .name-tag {
+    font-size: 3em;
+  }
+  .profession-tag {
+    font-size: 1.6em;
+  }
+}
+@media screen and (max-width: 920px) {
+  .name-tag {
+    font-size: 2.2em;
+  }
+  .welcome-line {
+    top: 4em;
+  }
+  .profession-tag {
+    font-size: 1.2em;
+  }
+  .name-wrapper {
+    top: 6.5em;
+  }
+}
+@media screen and (max-width: 550px) {
+  .welcome-text,
+  .welcome-line,
+  .image-line {
+    display: none;
+  }
+  .name-container {
+    position: unset;
+    width: 100%;
+    text-align: center;
+  }
+  .name-wrapper {
+    width: 80%;
+    position: relative;
+    top: 6em;
+    left: 0em;
+  }
+  .image-container {
+    margin-top: 0em;
+  }
+  .image-container img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .name-tag {
+    font-size: 1.7em;
+    line-height: 33px;
+  }
+  .profession-tag {
+    font-size: 1em;
+    line-height: 24px;
+    margin-bottom: 0em;
+  }
+  .name-wrapper {
+    top: 3.6em;
+  }
+}
+@media screen and (max-width: 300px) {
+  .name-wrapper {
+    width: 100%;
+  }
+}

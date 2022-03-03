@@ -1,0 +1,44 @@
+.mockup-container {
+  background-color: black;
+}
+.mockup-content-container {
+  margin: 3em;
+}
+.image-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4em;
+}
+.mockup-image-container {
+  width: 49%;
+}
+.mockup-image-container img {
+  width: 100%;
+}
+.image-description {
+  font-size: 1.5em;
+  color: #ffffff;
+  line-height: 36px;
+  text-align: left;
+  font-weight: 500;
+}
+@media screen and (max-width: 800px) {
+  .image-row {
+    display: block;
+    margin: 0em;
+  }
+  .mockup-image-container {
+    width: 100%;
+    margin-bottom: 4em;
+  }
+  .mockup-content-container {
+    margin: 1em;
+  }
+  .image-description {
+    font-size: 1.2em;
+  }
+  /* .case-study,
+  .mockup {
+    font-size: 0.5emem;
+  } */
+}

@@ -1,0 +1,89 @@
+.about-container {
+  background-color: black;
+}
+.about-content-container {
+  margin: 3em;
+  display: flex;
+  justify-content: space-around;
+  /* background-color: red; */
+}
+.about-cv-container {
+  /* background-color: yellow; */
+  width: 20%;
+}
+.about-me {
+  font-size: 2.3em;
+  line-height: 54px;
+  color: #3e6adb;
+  font-weight: 500;
+}
+.download-cv-btn {
+  padding: 1em 1.5em;
+  font-size: 1em;
+  background-color: #3e6adb;
+  color: white;
+  border: none;
+}
+.about-text {
+  width: 65%;
+  text-align: left;
+  font-size: 1em;
+  line-height: 24px;
+  color: white;
+}
+.about-text p:first-child {
+  font-size: 1.5em;
+  line-height: 36px;
+  width: 80%;
+  font-weight: 400px;
+}
+.more-about-me-btn {
+  padding: 0.9em;
+  font-size: 1em;
+  background-color: transparent;
+  border-color: #3e6adb;
+  color: #3e6adb;
+  margin-top: 1em;
+}
+@media screen and (max-width: 800px) {
+  .about-content-container {
+    margin: 1em;
+    display: block;
+  }
+  .about-me {
+    font-size: 1.5em;
+    line-height: 30px;
+  }
+  .about-cv-container {
+    width: 100%;
+  }
+  .about-text {
+    width: 100%;
+  }
+  .about-text p {
+    width: 100%;
+    font-size: 0.7em;
+    line-height: 24px;
+  }
+  .about-text p:first-child {
+    width: 100%;
+    font-weight: 500;
+    font-size: 0.7em;
+    line-height: 21px;
+  }
+  .download-cv-btn {
+    /* float: right;
+    margin-bottom: auto; */
+    position: absolute;
+    right: 1em;
+    top: 21.1em;
+    /* left: 14em; */
+  }
+}
+/* @media screen and (max-width: 770px) {
+  .download-cv-btn {
+    position: absolute;
+    right: 1em;
+    top: 16.6em;
+  }
+} */

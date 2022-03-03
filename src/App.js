@@ -1,15 +1,14 @@
 import React from 'react';
 import './App.css';
-import AboutMe from './pages/About_me';
-import Header from './pages/Header';
+import FirstLandingPage from './pages/firstLandingPage'; 
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <AboutMe />
+      <FirstLandingPage />
     </div>
   );
 }
 
 export default App;
+
