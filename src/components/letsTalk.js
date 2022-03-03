@@ -10,7 +10,7 @@ const Contact = ({image}) => {
         <div className="lets-talk-container">
             <div>
                 <img src={image} className='lets-talkk-text'/>
-                {/* <div className="vertical-line"/> */}
+        
                 <div className="footer-container">
                     <div className="contact-container">
                             <p className="contact">Contact</p>
@@ -45,7 +45,7 @@ const Contact = ({image}) => {
                             </textarea>
                             <Button className='send-msg-btn' btnText='Send Message' />
                             
-                            {/* <div className="mail-container" >
+                            <div className="mail-container" >
                                     <p className="email-text">Email </p>
                                     <p className="email">nzewlifunanya@gmail.com</p>
                                     
@@ -55,7 +55,8 @@ const Contact = ({image}) => {
                                     <img src={Facebook} />
                                     <img src={Twitter} />
                                     <img src={Instagram} />
-                            </div> */}
+                            </div>
+                            <div className="vertical-line"/>
                         </div>
                     </div>
 
