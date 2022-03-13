@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { StyledButton } from "../button";
 import {
     AboutContainer,
@@ -12,6 +13,13 @@ import {
 } from "./style";
 
 const AboutMe = () => {
+const navigate = useNavigate();
+
+const aboutPage = (e) =>{
+    e.preventDefault();
+    navigate('/aboutme');
+}
+
     return(
         <AboutContainer>
             <AboutContentContainer>
@@ -39,7 +47,7 @@ const AboutMe = () => {
                          Learning Management System, crypto industry ,B2B, B2C products.
                     </Paragraphs>
                     <AboutButtonsContainer>
-                        <StyledButton >More about me</StyledButton>
+                    <StyledButton onClick={aboutPage}>More about me</StyledButton>
                         <StyledButton primary>Download Cv</StyledButton>
                     </AboutButtonsContainer>
                 </AboutTextContainer>
