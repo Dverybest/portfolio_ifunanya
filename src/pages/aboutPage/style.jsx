@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { StyledButton } from "../../components/button";
 import { WelcomeIcons, WelcomeLine } from "../../components/welcome/style";
@@ -13,7 +13,7 @@ export const GoldenLine = styled(WelcomeLine)`
     display: none;
   }
 `;
-export const StyledLink = styled(Link)`
+export const StyledLink = styled(NavLink)`
   text-decoration: none;
   cursor: pointer;
 `;

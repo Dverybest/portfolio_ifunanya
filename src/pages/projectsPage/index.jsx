@@ -1,31 +1,31 @@
 import React, { useState } from "react";
-import AboutMe from "../../components/aboutMe";
-import Contact from "../../components/footer";
-import WelcomePage from "../../components/welcome";
 import Header from "../../components/header";
+import Contact from "../../components/footer";
 import CaseStudy from "../../components/caseStudy";
 import MockUp from "../../components/mockUp";
+import { StyledLink } from "../aboutPage/style";
 import {
   ClassificationText,
   PortfolioClassificationContainer,
-  PortfolioContainer,
   PortfolioContentContainer,
   PortfolioText,
   StyledButton,
 } from "../../components/caseStudy/style";
-import { Container } from "./style";
+import { Container } from "../firstPage/style";
+import { ProjectContainer, RestyledGoBack } from "./style";
 
-const FirstLandingPage = () => {
+const Projects = () => {
   const [state, setState] = useState(0);
 
   return (
     <Container>
       <Header />
-      <WelcomePage />
-      <AboutMe />
-      <PortfolioContainer>
+      <StyledLink to="/">
+        <RestyledGoBack> {"<Go Back"} </RestyledGoBack>
+      </StyledLink>
+      <ProjectContainer>
         <PortfolioContentContainer>
-          <PortfolioText>Portfolio</PortfolioText>
+          <PortfolioText>Projects I worked On</PortfolioText>
           <PortfolioClassificationContainer>
             <StyledButton
               onClick={() => {
@@ -46,10 +46,13 @@ const FirstLandingPage = () => {
           </PortfolioClassificationContainer>
           {state === 0 ? <CaseStudy /> : <MockUp />}
         </PortfolioContentContainer>
-      </PortfolioContainer>
+      </ProjectContainer>
+      <StyledLink to="/">
+        <RestyledGoBack> {"<Go Back"} </RestyledGoBack>
+      </StyledLink>
       <Contact />
     </Container>
   );
 };
 
-export default FirstLandingPage;
+export default Projects;

@@ -39,7 +39,7 @@ const MoreAboutMe = () => {
       <Header />
       <GoldenLine />
       <MoreAboutMeContentContainer>
-        <StyledLink to={-1}>
+        <StyledLink to="/">
           <GoBack> {"<Go Back"} </GoBack>
         </StyledLink>
 
@@ -246,7 +246,7 @@ const MoreAboutMe = () => {
             DESIGN initiative
           </Paragraph>
         </ContainerWithMargin>
-        <StyledLink to={-1}>
+        <StyledLink to="/">
           <GoBack> &lt;Go Back</GoBack>
         </StyledLink>
       </MoreAboutMeContentContainer>
