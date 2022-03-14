@@ -1,6 +1,5 @@
 import styled from "styled-components";
 import ContactIcons from "../contactIcons";
-import { ContactIconsImage, ContactIconsWrapper } from "../contactIcons/style";
 
 export const WelcomeContainer = styled.div`
   width: 100%;

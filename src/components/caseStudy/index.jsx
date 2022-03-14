@@ -9,6 +9,7 @@ import {
   Image,
   SecondParagraph,
   ViewOthersContainer,
+  StyledNavLink,
 } from "./style";
 
 const CaseStudy = () => {
@@ -37,7 +38,9 @@ const CaseStudy = () => {
         </TextContainer>
       </BigImageContainer>
       <ViewOthersContainer>
-        <p>View Others</p>
+        <StyledNavLink to="/projects" activeClassName="true">
+          View Others
+        </StyledNavLink>
       </ViewOthersContainer>
     </>
   );

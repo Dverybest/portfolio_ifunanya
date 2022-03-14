@@ -1,5 +1,5 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { StyledNavLink } from "../caseStudy/style";
 import ContactIcons from "../contactIcons";
 import {
   HeaderContainer,
@@ -15,11 +15,15 @@ const Header = () => {
       <HeaderContentWrapper>
         <Paragraph>Designer_ifuy</Paragraph>
         <UnorderedList>
-          <NavLink to="/aboutme">
+          <StyledNavLink to="/aboutme" active>
             <List>About me</List>
-          </NavLink>
-          <List>Projects</List>
-          <List>Contact me</List>
+          </StyledNavLink>
+          <StyledNavLink to="/projects" active>
+            <List>Projects</List>
+          </StyledNavLink>
+          <StyledNavLink to="/contact_me" active>
+            <List>Contact me</List>
+          </StyledNavLink>
         </UnorderedList>
         <ContactIcons margin="margin" />
       </HeaderContentWrapper>

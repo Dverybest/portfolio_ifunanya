@@ -118,11 +118,19 @@ export const ViewOthersContainer = styled.div`
   color: #ffffff;
   line-height: 24px;
   font-weight: 400;
-  padding: 0.5em;
+  padding: 1em;
   text-decoration: underline;
 
   @media screen and (max-width: 800px) {
     background-color: black;
     margin-top: -2em;
+  }
+`;
+export const StyledNavLink = styled(NavLink)`
+  text-decoration: none;
+  color: white;
+
+  &.active {
+    color: #567de0;
   }
 `;
