@@ -21,9 +21,9 @@ const Header = () => {
           <StyledNavLink to="/projects" active>
             <List>Projects</List>
           </StyledNavLink>
-          {/* <StyledNavLink to="" active> */}
-          <List>Contact me</List>
-          {/* </StyledNavLink> */}
+          <StyledNavLink to="/contact_me" active>
+            <List>Contact me</List>
+          </StyledNavLink>
         </UnorderedList>
         <ContactIcons margin="margin" />
       </HeaderContentWrapper>
