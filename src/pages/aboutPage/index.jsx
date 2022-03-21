@@ -108,7 +108,7 @@ const MoreAboutMe = () => {
               <SkillButton>User persona</SkillButton>
               <SkillButton>Ideation</SkillButton>
               <SkillButton>Userflow</SkillButton>
-              <SkillButton>Information Archeture</SkillButton>
+              <SkillButton>Information Architecture</SkillButton>
               <SkillButton>User stories</SkillButton>
               <SkillButton>Wireframing</SkillButton>
               <SkillButton>Prototyping</SkillButton>
