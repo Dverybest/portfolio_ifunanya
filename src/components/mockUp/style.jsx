@@ -1,35 +1,37 @@
 import styled from "styled-components";
 
 export const RowContainer = styled.div`
-display: flex;
+  display: flex;
   justify-content: space-between;
   margin-bottom: 4em;
 
-  @media screen and (max-width: 800px){
+  @media screen and (max-width: 800px) {
     display: block;
     margin: 0em;
   }
 `;
-export const MockUpImageContainer= styled.div`
-width: 49%;
+export const MockUpImageContainer = styled.div`
+  width: 49%;
 
-@media screen and (max-width: 800px){
+  @media screen and (max-width: 800px) {
     width: 100%;
     margin-bottom: 4em;
-}
+  }
 `;
 export const MockUpImages = styled.img`
-width: 100%;
+  width: 100%;
+  min-height: 10em;
+  background: #c4c4c4 50%;
 `;
 export const ImageDescription = styled.p`
-font-size: 1.5em;
+  font-size: 1.5em;
   color: #ffffff;
   line-height: 36px;
   text-align: left;
   font-weight: 600;
   font-family: "poppins";
 
-  @media screen and (max-width: 800px){
+  @media screen and (max-width: 800px) {
     font-size: 1.2em;
   }
-`
+`;

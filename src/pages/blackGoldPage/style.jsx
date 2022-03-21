@@ -10,6 +10,7 @@ export const FlowerImage = styled.img`
   width: 40%;
   float: right;
   margin-right: -2em;
+  min-height: 10em;
 
   @media screen and (max-width: 800px) {
     float: unset;
@@ -201,6 +202,7 @@ export const ImageTag = styled.img`
   width: 100%;
   margin-bottom: 2em;
   margin-top: 1em;
+  min-height: 15em;
 `;
 export const DesktopImage = styled(ImageTag)`
   @media screen and (max-width: 800px) {
@@ -216,6 +218,7 @@ export const MobileImage = styled(ImageTag)`
 `;
 export const FlexImage = styled.img`
   width: 49%;
+  min-height: 10em;
 
   @media screen and (max-width: 800px) {
     width: 100%;

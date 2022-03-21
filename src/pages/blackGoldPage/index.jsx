@@ -70,8 +70,8 @@ const BlackGold = () => {
     <Container>
       <Header />
       <ImageContainer>
-        <Image src={BlackGoldImg} />
-        <StyledBackArrow src={BlackArrow} onClick={() => navigate("/")} />
+        <Image src={BlackGoldImg} loading="lazy" />
+        <StyledBackArrow src={BlackArrow} onClick={() => navigate(-1)} />
       </ImageContainer>
       <ContainerWithMargin>
         <Flex>
@@ -100,7 +100,7 @@ const BlackGold = () => {
           instead, some other don’t know where and how to invest there money
           ignorant of the various opportunities in the investment industry
         </Text>
-        <FlowerImage src={Flower} />
+        <FlowerImage src={Flower} loading="lazy" />
         <RestyledSubHeading white>About Project</RestyledSubHeading>
         <Text>
           This product is aim at encouraging money investment and provides users
@@ -178,11 +178,11 @@ const BlackGold = () => {
           here are my findings
         </Text>
         <FlexBox>
-          <FlexImage src={Research1} />
-          <FlexImage src={Research2} />
+          <FlexImage src={Research1} loading="lazy" />
+          <FlexImage src={Research2} loading="lazy" />
         </FlexBox>
-        <DesktopImage src={Research3} />
-        <MobileImage src={Research4} />
+        <DesktopImage src={Research3} loading="lazy" />
+        <MobileImage src={Research4} loading="lazy" />
         <RestyledFlex>
           <Box color="purple">
             <Percent>90%</Percent>
@@ -212,7 +212,7 @@ const BlackGold = () => {
           developed a representative of the target as the persona, creatinga
           persona will help me understand the users needs and experience
         </Paragraph>
-        <ImageTag src={Persona} />
+        <ImageTag src={Persona} loading="lazy" />
 
         <TableImage>
           <MeddiumHeader>Empathy Map</MeddiumHeader>
@@ -221,22 +221,22 @@ const BlackGold = () => {
             knowledges about a user’s behaviours and attitudes, It is a useful
             tool to helps better understand the users
           </Paragraph>
-          <ImageTag src={Table} />
+          <ImageTag src={Table} loading="lazy" />
         </TableImage>
         <MeddiumHeader>Information Architecture</MeddiumHeader>
         <Paragraph>
           Having conducted an interview and survey i came up with these user
           persona to represent the users
         </Paragraph>
-        <ImageTag src={Architecture} />
+        <ImageTag src={Architecture} loading="lazy" />
         <MeddiumHeader>Userflow</MeddiumHeader>
         <Paragraph>
           Having conducted an interview and survey i came up with these user
           persona to represent the users
         </Paragraph>
-        <ImageTag src={GoldUserflow} />
+        <ImageTag src={GoldUserflow} loading="lazy" />
       </ContainerWithMargin>
-      <ImageTag src={VisualDesign} />
+      <ImageTag src={VisualDesign} loading="lazy" />
       <ContainerWithMargin>
         <MeddiumHeader>Prototype</MeddiumHeader>
         <Paragraph>
@@ -244,9 +244,9 @@ const BlackGold = () => {
           persona to represent the users
         </Paragraph>
       </ContainerWithMargin>
-      <ImageTag src={Prototype1} />
-      <ImageTag src={Prototype2} />
-      <ImageTag src={Prototype3} />
+      <ImageTag src={Prototype1} loading="lazy" />
+      <ImageTag src={Prototype2} loading="lazy" />
+      <ImageTag src={Prototype3} loading="lazy" />
       <AshContainer primary>
         <ThanksNote>Thank you for reading through</ThanksNote>
         <DesginersName>Designer_ifuy</DesginersName>

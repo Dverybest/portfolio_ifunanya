@@ -3,7 +3,6 @@ import Header from "../../components/header";
 import Contact from "../../components/footer";
 import CaseStudy from "../../components/caseStudy";
 import MockUp from "../../components/mockUp";
-import { StyledLink } from "../aboutPage/style";
 import {
   ClassificationText,
   PortfolioClassificationContainer,
@@ -13,16 +12,16 @@ import {
 } from "../../components/caseStudy/style";
 import { Container } from "../firstPage/style";
 import { ProjectContainer, RestyledGoBack } from "./style";
+import { useNavigate } from "react-router-dom";
 
 const Projects = () => {
   const [state, setState] = useState(0);
+  const navigate = useNavigate();
 
   return (
     <Container>
       <Header />
-      <StyledLink to="/">
-        <RestyledGoBack> {"<Go Back"} </RestyledGoBack>
-      </StyledLink>
+      <RestyledGoBack onClick={() => navigate(-1)}>{"<Go Back"}</RestyledGoBack>
       <ProjectContainer>
         <PortfolioContentContainer>
           <PortfolioText>Projects I worked On</PortfolioText>
@@ -47,9 +46,7 @@ const Projects = () => {
           {state === 0 ? <CaseStudy /> : <MockUp />}
         </PortfolioContentContainer>
       </ProjectContainer>
-      <StyledLink to="/">
-        <RestyledGoBack> {"<Go Back"} </RestyledGoBack>
-      </StyledLink>
+      <RestyledGoBack onClick={() => navigate(-1)}>{"<Go Back"}</RestyledGoBack>
       <Contact />
     </Container>
   );

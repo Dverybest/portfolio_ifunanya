@@ -19,7 +19,7 @@ const CaseStudy = () => {
   return (
     <>
       <BigImageContainer>
-        <Image src={Medisource} />
+        <Image src={Medisource} loading="lazy" />
         <TextContainer>
           <FirstParagraph>Medisource</FirstParagraph>
           <SecondParagraph>
@@ -32,7 +32,7 @@ const CaseStudy = () => {
         </TextContainer>
       </BigImageContainer>
       <BigImageContainer>
-        <Image src={BlackGold} />
+        <Image src={BlackGold} loading="lazy" />
         <TextContainer>
           <FirstParagraph>Black Gold</FirstParagraph>
           <SecondParagraph>
