@@ -11,8 +11,11 @@ import {
   ViewOthersContainer,
   StyledNavLink,
 } from "./style";
+import { useNavigate } from "react-router-dom";
 
 const CaseStudy = () => {
+  const navigate = useNavigate();
+
   return (
     <>
       <BigImageContainer>
@@ -23,7 +26,9 @@ const CaseStudy = () => {
             A health social media platform that connects medical specialist and
             enables consultations
           </SecondParagraph>
-          <StyledButton>Project details</StyledButton>
+          <StyledButton onClick={() => navigate("/medysinc")}>
+            Project details
+          </StyledButton>
         </TextContainer>
       </BigImageContainer>
       <BigImageContainer>
@@ -34,7 +39,9 @@ const CaseStudy = () => {
             An investment platform that shows different investment opportunities
             that allow people invest through the platform
           </SecondParagraph>
-          <StyledButton>Project details</StyledButton>
+          <StyledButton onClick={() => navigate("/black_gold")}>
+            Project details
+          </StyledButton>
         </TextContainer>
       </BigImageContainer>
       <ViewOthersContainer>

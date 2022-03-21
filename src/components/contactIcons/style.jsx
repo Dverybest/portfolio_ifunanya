@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const ContactIconsWrapper = styled.div`
   display: flex;
+  margin: auto 0em;
 
   @media screen and (max-width: 800px) {
     display: none;
