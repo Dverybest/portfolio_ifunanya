@@ -3,6 +3,8 @@ import { Paragraph } from "../../components/header/style";
 
 export const Image = styled.img`
   width: 100%;
+  min-height: 10em;
+  background-color: #c4c4c450;
 `;
 export const ImageContainer = styled.div`
   width: 100%;
@@ -49,6 +51,8 @@ export const Paragraph1 = styled(Title)`
 export const StyledImage = styled.img`
   width: 100%;
   margin: 2em 0em;
+  min-height: 5em;
+  background-color: #c4c4c450;
 `;
 export const RestyledImage = styled(StyledImage)`
   width: 50%;
@@ -105,6 +109,8 @@ export const Tools = styled.div`
 `;
 export const StyledFigma = styled.img`
   width: 100%;
+  min-height: 3em;
+  background: #c4c4c450;
 `;
 export const Project = styled.div`
   width: 40%;
@@ -173,6 +179,7 @@ export const ChallengeImg = styled.img`
   width: 35%;
   float: right;
   margin-top: -12em;
+  min-height: 10em;
 
   @media screen and (max-width: 800px) {
     float: unset;
@@ -338,6 +345,8 @@ export const DivWrap = styled.div`
 export const RestyledImage2 = styled(StyledImage)`
   width: 55%;
   margin: 0em;
+  min-height: 7em;
+  border-radius: 0.5em;
 
   @media screen and (max-width: 800px) {
     width: 100%;

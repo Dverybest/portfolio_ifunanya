@@ -8,7 +8,6 @@ import {
   MoreAboutMeContainer,
   MoreAboutMeContentContainer,
   GoldenLine,
-  StyledLink,
   AboutStyledImage,
   ContainerWithMargin,
   SkillButton,
@@ -32,16 +31,17 @@ import {
   ImageContainer,
   AboutIcons,
 } from "./style";
+import { useNavigate } from "react-router-dom";
 
 const MoreAboutMe = () => {
+  const navigate = useNavigate();
+
   return (
     <MoreAboutMeContainer>
       <Header />
       <GoldenLine />
       <MoreAboutMeContentContainer>
-        <StyledLink to="/">
-          <GoBack> {"<Go Back"} </GoBack>
-        </StyledLink>
+        <GoBack onClick={() => navigate(-1)}> {"<Go Back"} </GoBack>
 
         <SubTitles>About Me</SubTitles>
         <ContainerWithMargin>
@@ -61,9 +61,9 @@ const MoreAboutMe = () => {
             </Paragraph>
           </ParagraphContainer>
 
-          <AboutStyledImage src={Image} />
+          <AboutStyledImage src={Image} loading="lazy" />
           <ImageContainer>
-            <img src={MobileImage} />
+            <img src={MobileImage} loading="lazy" />
             <AboutIcons padding />
           </ImageContainer>
 
@@ -246,9 +246,7 @@ const MoreAboutMe = () => {
             DESIGN initiative
           </Paragraph>
         </ContainerWithMargin>
-        <StyledLink to="/">
-          <GoBack> &lt;Go Back</GoBack>
-        </StyledLink>
+        <GoBack onClick={() => navigate(-1)}> {"<Go Back"} </GoBack>
       </MoreAboutMeContentContainer>
       <Contact />
     </MoreAboutMeContainer>

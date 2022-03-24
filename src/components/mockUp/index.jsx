@@ -19,41 +19,41 @@ const MockUp = () => {
     <>
       <RowContainer>
         <MockUpImageContainer>
-          <MockUpImages src={Image1} />
+          <MockUpImages src={Image1} loading="lazy" />
           <ImageDescription>Pizza order website</ImageDescription>
         </MockUpImageContainer>
         <MockUpImageContainer>
-          <MockUpImages src={Image2} />
+          <MockUpImages src={Image2} loading="lazy" />
           <ImageDescription>Food Delivery Website</ImageDescription>
         </MockUpImageContainer>
       </RowContainer>
       <RowContainer>
         <MockUpImageContainer>
-          <MockUpImages src={Image3} />
+          <MockUpImages src={Image3} loading="lazy" />
           <ImageDescription>Learning Platform</ImageDescription>
         </MockUpImageContainer>
         <MockUpImageContainer>
-          <MockUpImages src={Image4} />
+          <MockUpImages src={Image4} loading="lazy" />
           <ImageDescription>Savings Mobile App</ImageDescription>
         </MockUpImageContainer>
       </RowContainer>
       <RowContainer>
         <MockUpImageContainer>
-          <MockUpImages src={Image5} />
+          <MockUpImages src={Image5} loading="lazy" />
           <ImageDescription>Message Player Mobile App</ImageDescription>
         </MockUpImageContainer>
         <MockUpImageContainer>
-          <MockUpImages src={Image6} />
+          <MockUpImages src={Image6} loading="lazy" />
           <ImageDescription>Investment Platform</ImageDescription>
         </MockUpImageContainer>
       </RowContainer>
       <RowContainer>
         <MockUpImageContainer>
-          <MockUpImages src={Image7} />
+          <MockUpImages src={Image7} loading="lazy" />
           <ImageDescription>Medical Mobile App</ImageDescription>
         </MockUpImageContainer>
         <MockUpImageContainer>
-          <MockUpImages src={Image8} />
+          <MockUpImages src={Image8} loading="lazy" />
           <ImageDescription>Radio monitoring Dashboard</ImageDescription>
         </MockUpImageContainer>
       </RowContainer>

@@ -12,6 +12,7 @@ export const WelcomeTextImage = styled.img`
   position: absolute;
   right: 0em;
   top: 0em;
+  min-height: 5em;
 
   @media screen and (max-width: 550px) {
     display: none;
@@ -96,6 +97,7 @@ export const StyledNameWrapper = styled.img`
   position: relative;
   top: 8em;
   left: -2.2em;
+  min-height: 3em;
 
   @media screen and (max-width: 1025px) {
     top: 7.5em;
@@ -129,9 +131,11 @@ export const ImageContainer = styled.div`
 `;
 export const StyledImage = styled.img`
   width: 70%;
+  min-height: 15em;
 
   @media screen and (max-width: 550px) {
     width: 100%;
+    min-height: 10em;
   }
 `;
 export const ImageLine = styled.div`

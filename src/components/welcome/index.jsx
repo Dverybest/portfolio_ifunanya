@@ -19,11 +19,11 @@ import {
 const welcomePage = () => {
   return (
     <WelcomeContainer>
-      <WelcomeTextImage src={Welcome} />
+      <WelcomeTextImage src={Welcome} loading="lazy" />
       <WelcomeLine />
       <div className="name-image-container">
         <NameContainer>
-          <StyledNameWrapper src={NameWrapper} />
+          <StyledNameWrapper src={NameWrapper} loading="lazy" />
           <NameParagraph>Hello, I am Ifunanya</NameParagraph>
           <ProfessionParagraph>
             Product Designer per excellence
@@ -31,7 +31,7 @@ const welcomePage = () => {
           <WelcomeIcons padding />
         </NameContainer>
         <ImageContainer>
-          <StyledImage src={Image} />
+          <StyledImage src={Image} loading="lazy" />
           <ImageLine />
         </ImageContainer>
       </div>

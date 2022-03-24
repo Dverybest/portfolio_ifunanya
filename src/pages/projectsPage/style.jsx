@@ -3,7 +3,7 @@ import { PortfolioContainer } from "../../components/caseStudy/style";
 import { GoBack } from "../aboutPage/style";
 
 export const RestyledGoBack = styled(GoBack)`
-  margin: 3em;
+  margin: 1em 0em 0em 3em;
   @media screen and (max-width: 800px) {
     margin: 1em;
   }

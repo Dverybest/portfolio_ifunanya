@@ -1,7 +1,7 @@
-import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { StyledButton } from "../../components/button";
-import { WelcomeIcons, WelcomeLine } from "../../components/welcome/style";
+import ContactIcons from "../../components/contactIcons";
+import { WelcomeLine } from "../../components/welcome/style";
 
 export const MoreAboutMeContainer = styled.div`
   background: black;
@@ -12,10 +12,6 @@ export const GoldenLine = styled(WelcomeLine)`
   @media screen and (max-width: 800px) {
     display: none;
   }
-`;
-export const StyledLink = styled(NavLink)`
-  text-decoration: none;
-  cursor: pointer;
 `;
 export const MoreAboutMeContentContainer = styled.div`
   margin: 2em 5.5em;
@@ -38,6 +34,8 @@ export const ImageContainer = styled.div`
     display: block;
     position: relative;
     width: 100%;
+    min-height: 10em;
+
     img {
       width: 100%;
       margin: 0em 0em -0.2em -0.2em;
@@ -48,12 +46,15 @@ export const AboutStyledImage = styled.img`
   width: 100%;
   float: right;
   margin: -8em -8.5em 17em 0em;
+  min-height: 40em;
 
   @media screen and (max-width: 1030px) {
     margin-bottom: 33em;
+    min-height: 30em;
   }
   @media screen and (max-width: 915px) {
     margin-bottom: 42em;
+    min-height: 26em;
   }
   @media screen and (max-width: 830px) {
     display: none;
@@ -222,10 +223,12 @@ export const Clients = styled(Company)`
     margin: 1em 0em;
   }
 `;
-export const GoBack = styled(Paragraph)`
+export const GoBack = styled.button`
   color: #b6b6b6;
+  background-color: transparent;
+  border: none;
 `;
-export const AboutIcons = styled(WelcomeIcons)`
+export const AboutIcons = styled(ContactIcons)`
   display: none;
   @media screen and (max-width: 830px) {
     display: flex;
@@ -233,5 +236,9 @@ export const AboutIcons = styled(WelcomeIcons)`
     bottom: 0em;
     left: 50%;
     transform: translate(-50%);
+
+    img {
+      width: 1.5em;
+    }
   }
 `;

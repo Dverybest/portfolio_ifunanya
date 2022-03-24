@@ -82,8 +82,8 @@ const Medysinc = () => {
     <Container>
       <Header />
       <ImageContainer>
-        <Image src={Medisync} />
-        <StyledBackArrow src={BackArrow} onClick={() => navigate("/")} />
+        <Image src={Medisync} loading="lazy" />
+        <StyledBackArrow src={BackArrow} onClick={() => navigate(-1)} />
       </ImageContainer>
       <ContainerWithMargin>
         <Flex>
@@ -123,7 +123,7 @@ const Medysinc = () => {
           fall back to. These heroic acts are often beset with failures and poor
           patient outcomes.
         </Text>
-        <ChallengeImg src={ChallengeImage} />
+        <ChallengeImg src={ChallengeImage} loading="lazy" />
         <SubHeadings>The Goal</SubHeadings>
         <Text2>
           To create a system that enable networking among medical specialist to
@@ -219,7 +219,7 @@ const Medysinc = () => {
           product team, we had conversation regarding the medical industry in
           relation to the idea and these are my findings:
         </Paragraph2>
-        <StyledImage src={ResearchImage} />
+        <StyledImage src={ResearchImage} loading="lazy" />
         <Heading3>Problem</Heading3>
         <UnorderedList>
           <List>Lack of quick access to senior specialist in the industry</List>
@@ -235,7 +235,7 @@ const Medysinc = () => {
             Low mentorship relationship between junior and senior specialist
           </List>
         </UnorderedList>
-        <Heading3>Solutin</Heading3>
+        <Heading3>Solution</Heading3>
         <UnorderedList>
           <List>
             A system where specialist can discuss about health and medical
@@ -255,9 +255,9 @@ const Medysinc = () => {
           The target audience are Medical Students and Specialists( both Junior
           and senior level)
         </Paragraph2>
-        <Heading2>Online Survey (Quatitative Analysis)</Heading2>
+        <Heading2>Online Survey (Qualitative Analysis)</Heading2>
         <Paragraph2>
-          Condicted an online survey to know what medical specialists needs and
+          Conducted an online survey to know what medical specialists needs and
           problems
         </Paragraph2>
         <HorizontalLine />
@@ -308,7 +308,7 @@ const Medysinc = () => {
           Having conducted an interview and survey i came up with these user
           persona to represent the users
         </Paragraph2>
-        <StyledImage src={Define} />
+        <StyledImage src={Define} loading="lazy" />
         <Wrap>
           <HorizontalRule />
           <Circle>3</Circle>
@@ -318,18 +318,18 @@ const Medysinc = () => {
         <Heading2>User Stories</Heading2>
         <Paragraph2>
           Having interviewed potential users and translated findings into
-          personas to guide the way, i brainstormed user stories, xhoose the key
+          personas to guide the way, i brainstormed user stories, choose the key
           stories and determined the app featues requirements, so as to
           determine the the MVP objectives
         </Paragraph2>
-        <StyledImage src={Ideate1} />
-        <RestyledImage src={Ideate2} />
+        <StyledImage src={Ideate1} loading="lazy" />
+        <RestyledImage src={Ideate2} loading="lazy" />
         <Heading2>User Flow Diagram</Heading2>
         <Paragraph2>
           I translated the user stories and key feature requirements into a
           basic flowthat would be our user’s path through the pp{" "}
         </Paragraph2>
-        <StyledImage src={UserFlow} />
+        <StyledImage src={UserFlow} loading="lazy" />
         <Wrap>
           <HorizontalRule />
           <Circle>4</Circle>
@@ -345,13 +345,13 @@ const Medysinc = () => {
           I translated the user stories and key feature requirements into a
           basic flowthat would be our user’s path through the pp{" "}
         </Paragraph2>
-        <StyledImage src={WireFrame} />
+        <StyledImage src={WireFrame} loading="lazy" />
         <Heading2>Design System</Heading2>
         <Paragraph2>
           I translated the user stories and key feature requirements into a
           basic flowthat would be our user’s path through the pp{" "}
         </Paragraph2>
-        <StyledImage src={DesignSystem} />
+        <StyledImage src={DesignSystem} loading="lazy" />
         <Heading2>Prototype</Heading2>
         <Paragraph2>
           I translated the user stories and key feature requirements into a
@@ -359,7 +359,7 @@ const Medysinc = () => {
         </Paragraph2>
       </ContainerWithMargin>
       <Div>
-        <StyledImage src={Prototype} />
+        <StyledImage src={Prototype} loading="lazy" />
       </Div>
       <PrototypeContainer>
         <ReversedDiv>
@@ -370,7 +370,7 @@ const Medysinc = () => {
               neccesary details asked
             </Paragraph2>
           </TextContainer>
-          <RestyledImage2 src={SignIn} />
+          <RestyledImage2 src={SignIn} loading="lazy" />
         </ReversedDiv>
         <DivWrap>
           <TextContainer>
@@ -380,7 +380,7 @@ const Medysinc = () => {
               get comments and likes
             </Paragraph2>
           </TextContainer>
-          <RestyledImage2 src={Newsfeed} />
+          <RestyledImage2 src={Newsfeed} loading="lazy" />
         </DivWrap>
         <ReversedDiv>
           <TextContainer>
@@ -390,7 +390,7 @@ const Medysinc = () => {
               guidance, as well as specialists can set availability
             </Paragraph2>
           </TextContainer>
-          <RestyledImage2 src={Consultation} />
+          <RestyledImage2 src={Consultation} loading="lazy" />
         </ReversedDiv>
         <DivWrap>
           <TextContainer>
@@ -400,7 +400,7 @@ const Medysinc = () => {
               specialists
             </Paragraph2>
           </TextContainer>
-          <RestyledImage2 src={Chat} />
+          <RestyledImage2 src={Chat} loading="lazy" />
         </DivWrap>
         <ReversedDiv>
           <TextContainer>
@@ -410,7 +410,7 @@ const Medysinc = () => {
               specialists
             </Paragraph2>
           </TextContainer>
-          <RestyledImage2 src={Profile} />
+          <RestyledImage2 src={Profile} loading="lazy" />
         </ReversedDiv>
         <Heading4>Project Status</Heading4>
         <Paragraph2>The project is currently on Development</Paragraph2>
