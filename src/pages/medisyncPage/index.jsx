@@ -235,7 +235,7 @@ const Medysinc = () => {
             Low mentorship relationship between junior and senior specialist
           </List>
         </UnorderedList>
-        <Heading3>Solutin</Heading3>
+        <Heading3>Solution</Heading3>
         <UnorderedList>
           <List>
             A system where specialist can discuss about health and medical
@@ -255,9 +255,9 @@ const Medysinc = () => {
           The target audience are Medical Students and Specialists( both Junior
           and senior level)
         </Paragraph2>
-        <Heading2>Online Survey (Quatitative Analysis)</Heading2>
+        <Heading2>Online Survey (Qualitative Analysis)</Heading2>
         <Paragraph2>
-          Condicted an online survey to know what medical specialists needs and
+          Conducted an online survey to know what medical specialists needs and
           problems
         </Paragraph2>
         <HorizontalLine />
@@ -318,7 +318,7 @@ const Medysinc = () => {
         <Heading2>User Stories</Heading2>
         <Paragraph2>
           Having interviewed potential users and translated findings into
-          personas to guide the way, i brainstormed user stories, xhoose the key
+          personas to guide the way, i brainstormed user stories, choose the key
           stories and determined the app featues requirements, so as to
           determine the the MVP objectives
         </Paragraph2>

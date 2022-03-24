@@ -21,7 +21,7 @@ export const MockUpImageContainer = styled.div`
 export const MockUpImages = styled.img`
   width: 100%;
   min-height: 10em;
-  background: #c4c4c4 50%;
+  background: #c4c4c450;
 `;
 export const ImageDescription = styled.p`
   font-size: 1.5em;

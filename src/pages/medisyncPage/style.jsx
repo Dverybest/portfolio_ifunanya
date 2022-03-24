@@ -4,7 +4,7 @@ import { Paragraph } from "../../components/header/style";
 export const Image = styled.img`
   width: 100%;
   min-height: 10em;
-  background-color: #c4c4c4 50%;
+  background-color: #c4c4c450;
 `;
 export const ImageContainer = styled.div`
   width: 100%;
@@ -52,7 +52,7 @@ export const StyledImage = styled.img`
   width: 100%;
   margin: 2em 0em;
   min-height: 5em;
-  background-color: #c4c4c4 50%;
+  background-color: #c4c4c450;
 `;
 export const RestyledImage = styled(StyledImage)`
   width: 50%;
@@ -109,6 +109,8 @@ export const Tools = styled.div`
 `;
 export const StyledFigma = styled.img`
   width: 100%;
+  min-height: 3em;
+  background: #c4c4c450;
 `;
 export const Project = styled.div`
   width: 40%;

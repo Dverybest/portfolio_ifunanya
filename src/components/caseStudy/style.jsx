@@ -73,7 +73,7 @@ export const BigImageContainer = styled.div`
 export const Image = styled.img`
   width: 60%;
   min-height: 10em;
-  background: #c4c4c4 50%;
+  background: #c4c4c450;
 
   @media screen and (max-width: 800px) {
     width: 100%;

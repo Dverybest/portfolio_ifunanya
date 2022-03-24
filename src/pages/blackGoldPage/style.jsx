@@ -214,11 +214,14 @@ export const MobileImage = styled(ImageTag)`
 
   @media screen and (max-width: 800px) {
     display: block;
+    min-height: 10em;
+    background: #c4c4c450;
   }
 `;
 export const FlexImage = styled.img`
   width: 49%;
   min-height: 10em;
+  background: #c4c4c450;
 
   @media screen and (max-width: 800px) {
     width: 100%;

@@ -34,6 +34,8 @@ export const ImageContainer = styled.div`
     display: block;
     position: relative;
     width: 100%;
+    min-height: 10em;
+
     img {
       width: 100%;
       margin: 0em 0em -0.2em -0.2em;
@@ -44,13 +46,15 @@ export const AboutStyledImage = styled.img`
   width: 100%;
   float: right;
   margin: -8em -8.5em 17em 0em;
-  min-height: 25em;
+  min-height: 40em;
 
   @media screen and (max-width: 1030px) {
     margin-bottom: 33em;
+    min-height: 30em;
   }
   @media screen and (max-width: 915px) {
     margin-bottom: 42em;
+    min-height: 26em;
   }
   @media screen and (max-width: 830px) {
     display: none;

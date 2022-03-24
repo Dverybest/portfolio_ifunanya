@@ -85,7 +85,7 @@ const BlackGold = () => {
           </Client>
           <Tools>
             <MediumTitle>TOOLS</MediumTitle>
-            <StyledFigma src={Figma} />
+            <StyledFigma src={Figma} loading="lazy" />
           </Tools>
         </Flex>
         <RestyledProject>
