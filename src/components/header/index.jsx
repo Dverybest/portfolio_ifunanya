@@ -13,8 +13,13 @@ const Header = () => {
   return (
     <HeaderContainer>
       <HeaderContentWrapper>
-        <Paragraph>Designer_ifuy</Paragraph>
+        <StyledNavLink to="/" primary>
+          <Paragraph>Designer_ifuy</Paragraph>
+        </StyledNavLink>
         <UnorderedList>
+          <StyledNavLink to="/" active>
+            <List>Home</List>
+          </StyledNavLink>
           <StyledNavLink to="/aboutme" active>
             <List>About me</List>
           </StyledNavLink>

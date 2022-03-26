@@ -13,6 +13,9 @@ export const ContactIconsImage = styled.img`
   width: 1.5em;
   padding-right: ${(props) => (props.padding ? "1.5em" : "none")};
 
+  @media screen and (max-width: 920px) {
+    width: 1.2em;
+  }
   @media screen and (max-width: 380px) {
     padding-right: 1em;
   }

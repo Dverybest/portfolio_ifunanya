@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../../components/header";
 import Contact from "../../components/footer";
-import Medisync from "../../asset/images/medisync2.svg";
+import MedisyncImage from "../../asset/images/medisync2.svg";
 import BackArrow from "../../asset/images/back_arrow.png";
 import Figma from "../../asset/images/figma.png";
 import Define from "../../asset/images/define_img.svg";
@@ -22,7 +22,7 @@ import Pen from "../../asset/images/pen.png";
 import Light from "../../asset/images/light.png";
 import Note from "../../asset/images/note.png";
 import ResearchImage from "../../asset/images/research_img.svg";
-import { Container } from "../firstPage/style";
+import { Container } from "../homePage/style";
 import {
   Image,
   Title,
@@ -58,7 +58,7 @@ import {
   WhiteHeading,
   DivWrap,
   TextContainer,
-  DesginersName,
+  DesignersName,
   AshContainer,
   ThanksNote,
   ReversedDiv,
@@ -73,16 +73,17 @@ import {
   Text2,
   ImageContainer,
   HorizontalRule,
+  NextProject,
 } from "./style";
 import { useNavigate } from "react-router-dom";
 
-const Medysinc = () => {
+const Medisync = () => {
   const navigate = useNavigate();
   return (
     <Container>
       <Header />
       <ImageContainer>
-        <Image src={Medisync} loading="lazy" />
+        <Image src={MedisyncImage} loading="lazy" />
         <StyledBackArrow src={BackArrow} onClick={() => navigate(-1)} />
       </ImageContainer>
       <ContainerWithMargin>
@@ -191,10 +192,6 @@ const Medysinc = () => {
           <HorizontalRule />
         </Wrap>
         <Heading>Empathise</Heading>
-        <Paragraph2>
-          This process is to enable me understand the product and the users of
-          the product
-        </Paragraph2>
         <Heading2>Stalkholder Interview</Heading2>
         <Paragraph2>
           I was part of a meeting with the product owners to understand their
@@ -299,13 +296,9 @@ const Medysinc = () => {
           <HorizontalRule />
         </Wrap>
         <Heading>Define</Heading>
-        <Paragraph2>
-          This process is to enable me understand the product and the users of
-          the product
-        </Paragraph2>
         <Heading2>User Persona</Heading2>
         <Paragraph2>
-          Having conducted an interview and survey i came up with these user
+          Having conducted an interview and survey I came up with these user
           persona to represent the users
         </Paragraph2>
         <StyledImage src={Define} loading="lazy" />
@@ -336,10 +329,6 @@ const Medysinc = () => {
           <HorizontalRule />
         </Wrap>
         <WhiteHeading>Prototype</WhiteHeading>
-        <Paragraph2>
-          This process is to enable me understand the product and the users of
-          the product
-        </Paragraph2>
         <Heading2>Wire Frame</Heading2>
         <Paragraph2>
           I translated the user stories and key feature requirements into a
@@ -347,16 +336,8 @@ const Medysinc = () => {
         </Paragraph2>
         <StyledImage src={WireFrame} loading="lazy" />
         <Heading2>Design System</Heading2>
-        <Paragraph2>
-          I translated the user stories and key feature requirements into a
-          basic flowthat would be our user’s path through the pp{" "}
-        </Paragraph2>
         <StyledImage src={DesignSystem} loading="lazy" />
         <Heading2>Prototype</Heading2>
-        <Paragraph2>
-          I translated the user stories and key feature requirements into a
-          basic flowthat would be our user’s path through the pp{" "}
-        </Paragraph2>
       </ContainerWithMargin>
       <Div>
         <StyledImage src={Prototype} loading="lazy" />
@@ -417,11 +398,14 @@ const Medysinc = () => {
       </PrototypeContainer>
       <AshContainer>
         <ThanksNote>Thank you for reading through</ThanksNote>
-        <DesginersName>Designer_ifuy</DesginersName>
+        <DesignersName>Designer_ifuy</DesignersName>
+        <NextProject onClick={() => navigate("/black_gold")}>
+          {"Next Project >"}
+        </NextProject>
       </AshContainer>
       <Contact />
     </Container>
   );
 };
 
-export default Medysinc;
+export default Medisync;

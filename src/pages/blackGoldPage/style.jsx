@@ -33,7 +33,9 @@ export const MeddiumHeader = styled.p`
   }
 `;
 export const RestyledProject = styled(Project)`
-  margin-top: 1em;
+  @media screen and (max-width: 1285px) {
+    margin-top: 1em;
+  }
 
   @media screen and (max-width: 800px) {
     margin-top: -6em;
@@ -43,7 +45,7 @@ export const RestyledSubHeading = styled(SubHeadings)`
   color: white;
 
   @media screen and (max-width: 800px) {
-    color: #ffefbc;
+    color: ${(props) => (props.white ? "white" : "#ffefbc")};
   }
 `;
 export const SubHeading2 = styled.p`

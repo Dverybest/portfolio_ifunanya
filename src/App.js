@@ -5,8 +5,8 @@ import ScrollToTop from './components/scrollToTop';
 import MoreAboutMe from './pages/aboutPage';
 import BlackGold from './pages/blackGoldPage';
 import ContactMe from './pages/contactPage';
-import FirstLandingPage from './pages/firstPage'; 
-import Medysinc from './pages/medisyncPage';
+import Home from './pages/homePage'; 
+import Medisync from './pages/medisyncPage';
 import Projects from './pages/projectsPage';
 
 
@@ -16,11 +16,11 @@ function App() {
       <BrowserRouter>
       <ScrollToTop />
         <Routes>
-          <Route exact path="/" element={<FirstLandingPage />} />
+          <Route exact path="/" element={<Home />} />
           <Route path="/aboutme" element={<MoreAboutMe />} />
-          <Route path="/projects" element={<Projects />} />
+          <Route path="/projects/*" element={<Projects />} />
           <Route path="/contact_me" element={<ContactMe />} />
-          <Route path="/medysinc" element={<Medysinc />} />
+          <Route path="/medisync" element={<Medisync />} />
           <Route path="/black_gold" element={<BlackGold />} />
         </Routes>
       </BrowserRouter>

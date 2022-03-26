@@ -113,8 +113,11 @@ export const StyledFigma = styled.img`
   background: #c4c4c450;
 `;
 export const Project = styled.div`
-  width: 40%;
-  margin: -2em 0em 0em 42em;
+  margin: 2em 0em 0em 55em;
+  @media screen and (max-width: 1285px) {
+    width: 40%;
+    margin: -2em 0em 0em 42em;
+  }
   @media screen and (max-width: 1030px) {
     margin-left: 34em;
   }
@@ -373,7 +376,7 @@ export const Heading4 = styled(WhiteHeading)`
     line-height: 28px;
   }
 `;
-export const DesginersName = styled(Paragraph)`
+export const DesignersName = styled(Paragraph)`
   color: white;
   margin-left: 3em;
   margin-bottom: 0em;
@@ -385,10 +388,27 @@ export const DesginersName = styled(Paragraph)`
     text-align: center;
   }
 `;
+export const NextProject = styled(DesignersName)`
+  line-height: 24px;
+  margin: 0em;
+  position: absolute;
+  right: 3em;
+
+  :hover {
+    cursor: pointer;
+    color: #3e6adb;
+  }
+
+  @media screen and (max-width: 800px) {
+    position: unset;
+    margin-top: 2em;
+  }
+`;
 export const AshContainer = styled.div`
   width: 100%;
   padding: 2em 0em;
   margin-top: 3em;
+  position: relative;
   background: ${(props) => (props.primary ? "black" : "#161616")};
   display: flex;
   flex-direction: column-reverse;
