@@ -1,5 +1,5 @@
 import React from "react";
-import Medisource from "../../asset/images/medisync.svg";
+import Medisync from "../../asset/images/medisync.svg";
 import BlackGold from "../../asset/images/black_gold.png";
 import { StyledButton } from "../button";
 import {
@@ -19,20 +19,11 @@ const CaseStudy = () => {
   return (
     <>
       <BigImageContainer>
-        <Image src={Medisource} loading="lazy" />
-        <TextContainer>
-          <FirstParagraph>Medisource</FirstParagraph>
-          <SecondParagraph>
-            A health social media platform that connects medical specialist and
-            enables consultations
-          </SecondParagraph>
-          <StyledButton onClick={() => navigate("/medysinc")}>
-            Project details
-          </StyledButton>
-        </TextContainer>
-      </BigImageContainer>
-      <BigImageContainer>
-        <Image src={BlackGold} loading="lazy" />
+        <Image
+          src={BlackGold}
+          loading="lazy"
+          onClick={() => navigate("/black_gold")}
+        />
         <TextContainer>
           <FirstParagraph>Black Gold</FirstParagraph>
           <SecondParagraph>
@@ -44,8 +35,25 @@ const CaseStudy = () => {
           </StyledButton>
         </TextContainer>
       </BigImageContainer>
+      <BigImageContainer>
+        <Image
+          src={Medisync}
+          loading="lazy"
+          onClick={() => navigate("/medisync")}
+        />
+        <TextContainer>
+          <FirstParagraph>Medisync</FirstParagraph>
+          <SecondParagraph>
+            A health social media platform that connects medical specialist and
+            enables consultations
+          </SecondParagraph>
+          <StyledButton onClick={() => navigate("/medisync")}>
+            Project details
+          </StyledButton>
+        </TextContainer>
+      </BigImageContainer>
       <ViewOthersContainer>
-        <StyledNavLink to="/projects" activeClassName="true">
+        <StyledNavLink to="/projects/mockups" activeClassName="true">
           View Others
         </StyledNavLink>
       </ViewOthersContainer>

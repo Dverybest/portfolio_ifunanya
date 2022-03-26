@@ -43,11 +43,16 @@ export const ImageContainer = styled.div`
   }
 `;
 export const AboutStyledImage = styled.img`
-  width: 100%;
+  width: 80%;
   float: right;
-  margin: -8em -8.5em 17em 0em;
-  min-height: 40em;
+  margin: -6em -8.5em 5em 0em;
+  min-height: 44em;
 
+  @media screen and (max-width: 1285px) {
+    width: 100%;
+    margin: -6em -8.5em 15em 0em;
+    min-height: 40em;
+  }
   @media screen and (max-width: 1030px) {
     margin-bottom: 33em;
     min-height: 30em;
@@ -120,6 +125,10 @@ export const SkillButton = styled(StyledButton)`
   color: white;
   border-radius: 0.3em;
   padding: 0.8em 1.5em;
+  :hover {
+    cursor: unset;
+    background: rgba(62, 106, 219, 0.3);
+  }
 `;
 export const SkillsContainer = styled.div`
   width: 100%;
@@ -227,6 +236,10 @@ export const GoBack = styled.button`
   color: #b6b6b6;
   background-color: transparent;
   border: none;
+
+  @media screen and (max-width: 830px) {
+    display: none;
+  }
 `;
 export const AboutIcons = styled(ContactIcons)`
   display: none;

@@ -18,7 +18,7 @@ import VisualDesign from "../../asset/images/visual_design.svg";
 import Prototype1 from "../../asset/images/gold_prototype1.svg";
 import Prototype2 from "../../asset/images/gold_prototype2.svg";
 import Prototype3 from "../../asset/images/gold_prototype3.svg";
-import { Container } from "../firstPage/style";
+import { Container } from "../homePage/style";
 import {
   ContainerWithMargin,
   ImageContainer,
@@ -33,9 +33,10 @@ import {
   Text,
   AshContainer,
   ThanksNote,
-  DesginersName,
+  DesignersName,
   StyledFigma,
   List,
+  NextProject,
 } from "../medisyncPage/style";
 import {
   MeddiumHeader,
@@ -92,7 +93,7 @@ const BlackGold = () => {
           <MediumTitle>PROJECT Link</MediumTitle>
           <Paragraph1>Blackgoldsite</Paragraph1>
         </RestyledProject>
-        <RestyledSubHeading white>The Challenge</RestyledSubHeading>
+        <RestyledSubHeading>The Challenge</RestyledSubHeading>
         <Text>
           Financial investment is a huge part of wealth creation and financial
           growth, as this one habit of the rich. A number of people make money
@@ -101,13 +102,13 @@ const BlackGold = () => {
           ignorant of the various opportunities in the investment industry
         </Text>
         <FlowerImage src={Flower} loading="lazy" />
-        <RestyledSubHeading white>About Project</RestyledSubHeading>
+        <RestyledSubHeading>About Project</RestyledSubHeading>
         <Text>
           This product is aim at encouraging money investment and provides users
           with different investment opportunities (cutting across different
           marketplace), where they can invest and make returns on investment
         </Text>
-        <RestyledSubHeading white>The Goal</RestyledSubHeading>
+        <RestyledSubHeading>The Goal</RestyledSubHeading>
         <RestyledUl>
           <List>
             To build a seamless and user friendly application where users can
@@ -224,32 +225,23 @@ const BlackGold = () => {
           <ImageTag src={Table} loading="lazy" />
         </TableImage>
         <MeddiumHeader>Information Architecture</MeddiumHeader>
-        <Paragraph>
-          Having conducted an interview and survey i came up with these user
-          persona to represent the users
-        </Paragraph>
         <ImageTag src={Architecture} loading="lazy" />
         <MeddiumHeader>Userflow</MeddiumHeader>
-        <Paragraph>
-          Having conducted an interview and survey i came up with these user
-          persona to represent the users
-        </Paragraph>
         <ImageTag src={GoldUserflow} loading="lazy" />
       </ContainerWithMargin>
       <ImageTag src={VisualDesign} loading="lazy" />
       <ContainerWithMargin>
         <MeddiumHeader>Prototype</MeddiumHeader>
-        <Paragraph>
-          Having conducted an interview and survey i came up with these user
-          persona to represent the users
-        </Paragraph>
       </ContainerWithMargin>
       <ImageTag src={Prototype1} loading="lazy" />
       <ImageTag src={Prototype2} loading="lazy" />
       <ImageTag src={Prototype3} loading="lazy" />
       <AshContainer primary>
         <ThanksNote>Thank you for reading through</ThanksNote>
-        <DesginersName>Designer_ifuy</DesginersName>
+        <DesignersName>Designer_ifuy</DesignersName>
+        <NextProject onClick={() => navigate("/medisync")}>
+          {"Next Project >"}
+        </NextProject>
       </AshContainer>
       <Contact />
     </Container>

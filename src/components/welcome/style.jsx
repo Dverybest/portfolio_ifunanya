@@ -131,8 +131,10 @@ export const ImageContainer = styled.div`
 `;
 export const StyledImage = styled.img`
   width: 70%;
-  min-height: 15em;
-
+  min-height: 25em;
+  @media screen and (max-width: 830px) {
+    min-height: 20em;
+  }
   @media screen and (max-width: 550px) {
     width: 100%;
     min-height: 10em;
@@ -158,7 +160,7 @@ export const ImageLine = styled.div`
 export const WelcomeIcons = styled(ContactIcons)`
   display: block;
 
-  @media screen and (max-width: 800px) {
+  @media screen and (max-width: 550px) {
     display: block;
     position: absolute;
     bottom: 0em;

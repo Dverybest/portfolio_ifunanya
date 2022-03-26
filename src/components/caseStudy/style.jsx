@@ -55,6 +55,9 @@ export const StyledButton = styled.button`
   outline: none;
   border: none;
   background: transparent;
+  :hover {
+    cursor: pointer;
+  }
   ${ClassificationText} {
     border-bottom-style: ${(props) => (props.active ? "solid" : "unset")};
     font-weight: ${(props) => (props.active ? 600 : 400)};
@@ -74,6 +77,11 @@ export const Image = styled.img`
   width: 60%;
   min-height: 10em;
   background: #c4c4c450;
+
+  :hover {
+    cursor: pointer;
+    transform: scale(1.02);
+  }
 
   @media screen and (max-width: 800px) {
     width: 100%;
@@ -132,7 +140,10 @@ export const StyledNavLink = styled(NavLink)`
   text-decoration: none;
   color: white;
 
-  &.active {
+  :hover {
     color: #567de0;
+  }
+  &.active {
+    color: ${(props) => (props.primary ? "white" : "#567de0")};
   }
 `;

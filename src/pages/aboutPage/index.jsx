@@ -93,7 +93,7 @@ const MoreAboutMe = () => {
               designer grow seamlessly in there career path, converner of SHE
               THINKS AND DESIGN, a platform i started to achieve this desire
             </Paragraph>
-            <StyledButton primary>View Resume</StyledButton>
+            <StyledButton primary>View CV</StyledButton>
           </ParagraphContainer2>
           <SkillsContainer>
             <SubTitles> Skills/Tools</SubTitles>
@@ -149,7 +149,7 @@ const MoreAboutMe = () => {
             <WorkPlacesContainer>
               <Company>She Thinks & Design</Company>
               <Work>Product Design Lead & Mentor</Work>
-              <WorkDuration>(June 2020 - Feb 2022)</WorkDuration>
+              <WorkDuration>(Jan 2021 - Present)</WorkDuration>
             </WorkPlacesContainer>
             <WorkDetailContainer>
               <Paragraph>
@@ -166,8 +166,8 @@ const MoreAboutMe = () => {
                 (Product Development company)
               </CompanyDescription>
 
-              <Work>UI/UX Designer</Work>
-              <WorkDuration>(June 2020 - Feb 2022)</WorkDuration>
+              <Work>Product Designer</Work>
+              <WorkDuration>(Jan 2020 - Feb 2022)</WorkDuration>
             </WorkPlacesContainer>
             <WorkDetailContainer>
               <Paragraph>

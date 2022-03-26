@@ -15,7 +15,7 @@ import {
 } from "../../components/caseStudy/style";
 import { Container } from "./style";
 
-const FirstLandingPage = () => {
+const Home = () => {
   const [state, setState] = useState(0);
 
   return (
@@ -52,4 +52,4 @@ const FirstLandingPage = () => {
   );
 };
 
-export default FirstLandingPage;
+export default Home;

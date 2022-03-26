@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Header from "../../components/header";
 import Contact from "../../components/footer";
 import CaseStudy from "../../components/caseStudy";
@@ -10,13 +10,13 @@ import {
   PortfolioText,
   StyledButton,
 } from "../../components/caseStudy/style";
-import { Container } from "../firstPage/style";
+import { Container } from "../homePage/style";
 import { ProjectContainer, RestyledGoBack } from "./style";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 
 const Projects = () => {
-  const [state, setState] = useState(0);
   const navigate = useNavigate();
+  const params = useParams();
 
   return (
     <Container>
@@ -28,22 +28,22 @@ const Projects = () => {
           <PortfolioClassificationContainer>
             <StyledButton
               onClick={() => {
-                setState(0);
+                navigate("/projects");
               }}
-              active={state === 0}
+              active={params["*"] === ""}
             >
               <ClassificationText> Case Studies</ClassificationText>
             </StyledButton>
             <StyledButton
               onClick={() => {
-                setState(1);
+                navigate("/projects/mockups");
               }}
-              active={state === 1}
+              active={params["*"] === "mockups"}
             >
               <ClassificationText> Mockups</ClassificationText>
             </StyledButton>
           </PortfolioClassificationContainer>
-          {state === 0 ? <CaseStudy /> : <MockUp />}
+          {params["*"] === "" ? <CaseStudy /> : <MockUp />}
         </PortfolioContentContainer>
       </ProjectContainer>
       <RestyledGoBack onClick={() => navigate(-1)}>{"<Go Back"}</RestyledGoBack>

@@ -8,7 +8,7 @@ export const HeaderContainer = styled.div`
 
 export const HeaderContentWrapper = styled.div`
   margin: auto;
-  width: 85%;
+  width: 90%;
   display: flex;
   justify-content: space-between;
   color: white;
@@ -23,7 +23,9 @@ export const Paragraph = styled.p`
   line-height: 36px;
   font-family: "poppins";
   font-weight: 400;
-
+  @media screen and (max-width: 920px) {
+    font-size: 1.2em;
+  }
   @media screen and (max-width: 800px) {
     font-size: 1em;
   }
@@ -34,16 +36,19 @@ export const List = styled.li`
   font-family: "poppins";
   font-weight: 400;
   line-height: 27px;
+  @media screen and (max-width: 920px) {
+    font-size: 0.8em;
+  }
 `;
 export const UnorderedList = styled.ul`
   text-decoration: none;
-  width: 30%;
+  width: 35%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
-  @media screen and (max-width: 920px) {
-    width: 35%;
+  @media screen and (max-width: 1025px) {
+    width: 40%;
   }
   @media screen and (max-width: 800px) {
     display: none;
