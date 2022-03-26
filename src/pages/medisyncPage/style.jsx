@@ -84,7 +84,6 @@ export const Flex1 = styled.div`
 `;
 export const Role = styled.div`
   width: 51%;
-
   @media screen and (max-width: 800px) {
     width: 100%;
     margin-top: 2em;
@@ -109,24 +108,12 @@ export const Tools = styled.div`
 `;
 export const StyledFigma = styled.img`
   width: 100%;
-  min-height: 3em;
+  min-height: 2em;
   background: #c4c4c450;
 `;
 export const Project = styled.div`
-  margin: 2em 0em 0em 55em;
-  @media screen and (max-width: 1285px) {
-    width: 40%;
-    margin: -2em 0em 0em 42em;
-  }
-  @media screen and (max-width: 1030px) {
-    margin-left: 34em;
-  }
-  @media screen and (max-width: 930px) {
-    margin: 0em 0em 0em 30em;
-  }
-  @media screen and (max-width: 830px) {
-    margin: -3em 0em 0em 27em;
-  }
+  margin-left: 58%;
+
   @media screen and (max-width: 800px) {
     width: 50%;
     float: right;
