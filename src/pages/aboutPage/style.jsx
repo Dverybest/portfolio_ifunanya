@@ -43,16 +43,11 @@ export const ImageContainer = styled.div`
   }
 `;
 export const AboutStyledImage = styled.img`
-  width: 80%;
+  width: 100%;
   float: right;
-  margin: -6em -8.5em 5em 0em;
-  min-height: 44em;
+  margin: -8em -8.5em 17em 0em;
+  min-height: 40em;
 
-  @media screen and (max-width: 1285px) {
-    width: 100%;
-    margin: -6em -8.5em 15em 0em;
-    min-height: 40em;
-  }
   @media screen and (max-width: 1030px) {
     margin-bottom: 33em;
     min-height: 30em;
@@ -102,10 +97,6 @@ export const ParagraphContainer = styled.div`
     position: unset;
     width: 100%;
   }
-  @media screen and (max-width: 800px) {
-    position: unset;
-    width: 100%;
-  }
 `;
 export const ParagraphContainer2 = styled(ParagraphContainer)`
   top: 12.5em;
@@ -131,7 +122,7 @@ export const SkillButton = styled(StyledButton)`
   }
 `;
 export const SkillsContainer = styled.div`
-  width: 100%;
+  width: 96%;
   margin: 5em 0em;
   clear: both;
 `;

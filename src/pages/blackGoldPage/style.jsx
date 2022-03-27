@@ -33,9 +33,7 @@ export const MeddiumHeader = styled.p`
   }
 `;
 export const RestyledProject = styled(Project)`
-  @media screen and (max-width: 1285px) {
-    margin-top: 1em;
-  }
+  margin-left: 58%;
 
   @media screen and (max-width: 800px) {
     margin-top: -6em;
